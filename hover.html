@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+        <script type="text/javascript">
+
+        $(document).ready(function(){
+            
+        
+        
+        $('.hover').mouseenter(function(){
+            $(this).stop(false).animate({
+                width: '500px',
+                height: '300px',
+            },500);
+            $(this).css({
+                'backgroundColor':'red',
+                'borderRadius':'20px',
+                });
+            });
+        $('.hover').mouseleave(function(){
+            $(this).stop(false).animate({
+                width: '100px',
+                height: '100px',
+            },500);
+            $(this).css({
+                'backgroundColor':'#000',
+                'borderRadius':'0px',
+                });
+            });
+        
+        $('#btn').click(function () {
+            $('.hover').fadeToggle('500','linear');
+            });
+        
+        
+        
+        });
+        
+        
+        
+        
+         
+</script>
+        <style type="text/css">
+
+            .hover{ height: 100px; width: 100px; background: #111;}
+            #iframe{overflow: scroll;}
+            .btn{width: 100px;}
+        </style>
+        </head>
+        <body>
+            
+         
+         <div class="hover"></div><br/>
+         <div class="hover"></div><br/>
+         <div class="hover"></div><br/>
+         <div class="hover"></div><br/>
+         <div class="hover"></div><br/>
+         
+         <button id="btn">SEND</button>   
+        </body>
+    </html>

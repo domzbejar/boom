@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style type="text/css">
+            *{padding:0; margin: 0;}
+            body{font-family: "Helvetica Neue",helvetica, verdana,arial,sans-serif; color: #333;}
+            .container{background-color: #111;margin: 0 auto; max-width: 960px; padding:10px 20px;}
+            .slider{width: 100% !important; background-image: url('2.jpg'); background-size: 100%; max-height: 400px !important; min-height: 100px; height: 100%; background-repeat: no-repeat;} 
+        .btn{padding: 10px 20px; background: #e91010; background: -moz-linear-gradient(top,#e91010 0% , #920404 100%); color: #f2f2f2; border-radius: 5px; border: solid 1px #e91010; text-shadow: 0 -1px 0 rgba( 0, 0, 0, 0.25); font-family: 'helvetica neue',helvetica, arial,sans-serif; font-size: 15px; border-color: #e91010 #e91010 #6d0808; box-shadow:0px 1px 1px rgba(0,0,0,0.8);}
+        .btn:hover{ background: #920404; border-color: #920404 #920404 #6d0808;}
+        </style>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.js" ></script>
+        <script>
+            for (x=0; x<10; x++){
+                document.write("michael <br />");
+            }
+        </script>
+        <script>
+            var mike = 1;
+            do{
+                document.write( mike + " daw si michael <br />");
+                mike++
+            }while(mike<11);
+        </script>
+        <script type="text/javascript">
+            function go() {
+                
+                var matterials = document.getElementById("mat").value;
+                var but = "<button class=\"btn\" id=\"go\" onclick=\"go()\">GO</button>";
+                var sel = document.getElementById("mat").innerHTML;
+                var bato = "this is a rock <br /> and  michael is so CUTE!!!!! <h1>POGI</h1> <br />" + sel + but;
+                var sld = document.getElementById("slide").innerHTML;
+                
+                 
+                document.getElementById("slide2").innerHTML=sld;
+                
+                switch(matterials){
+                    case "none":
+                        document.getElementById("text").innerHTML="";
+                        break;
+                    case "rock" :
+                        document.getElementById("text").innerHTML=bato;
+                        break;
+                    case "paper" :
+                        document.getElementById("text").innerHTML="this is a paper";
+                        break;
+                    case "scissors" :
+                        document.getElementById("text").innerHTML="this is a scissors";
+                        break;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="slide" class="slider">
+            <div class="container">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis enim tempus nunc aliquet id congue felis laoreet. In lacus elit, varius in gravida nec, auctor eget odio. Nulla ornare tortor eget mauris luctus suscipit. Fusce dictum massa ut velit tincidunt et posuere justo congue. Aenean malesuada tincidunt augue quis convallis. Nullam sagittis sodales odio eget pellentesque. Etiam non nulla ante. In hac habitasse platea dictumst. Vivamus hendrerit lorem at nulla aliquam eu fringilla quam pretium. </p>
+            </div>
+        </div>
+        <select id="mat" value="">
+            <option id="opv" value="none">NONE</option>
+            <option id="opv" value="rock">rock</option>
+            <option id="opv" value="paper">paper</option>
+            <option id="opv" value="scissors">scissors</option>
+        </select>
+        <button class="btn" id="go" onclick="go()">GO</button>
+        <p id="text"></p>
+        <div id="slide2"></div>
+        
+        
+        
+    </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title></title>
+        <style type="text/css">
+            .container {margin: 0 auto; width: 960px;}
+           
+            nav ul{list-style-type: none; display:inline-table; position: relative; padding: 0;}
+            nav ul li {float: left;}
+            
+           
+           
+            nav ul li:after{display: block; content: ""; clear: both;}
+            
+            nav ul li a{background: #111; padding: 10px 20px; display: block;}
+            
+            nav ul ul{display: none;}
+            
+            nav ul li:hover > ul {display: block;}
+            
+            
+           
+            
+            nav ul li a:hover{background: #f2f2f2;}
+            
+            nav ul ul {display: none; position: absolute; top: 100%; padding: 0;}
+            nav ul ul li {position: relative; float: none;}
+            nav ul ul li a{paddng: 10px 20px;}
+            nav ul ul li a:hover {background: #f2f2f2;}
+            nav ul ul ul{ position:absolute; top:0; left: 100%;}
+            
+        </style>
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script type="text/javascript">   
+            
+        </script>
+        </head>
+        <body>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">gallery</a></li>
+                        <li><a href="#">service</a>
+                            <ul>
+                                <li><a href="#">events</a></li>
+                                <li><a href="#">product</a></li>
+                                <li><a href="#">events</a>
+                                    <ul>
+                                        <li><a href="#">1home</a></li>
+                                        <li><a href="#">2about</a></li>
+                                        <li><a href="#">3gallery</a></li>
+                                        <li><a href="#">4service</a>
+                                    </ul>
+                                </li>
+                                <li><a href="#">events2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">contacts</a></li>
+                        
+                    </ul>
+                </nav>
+            
+            <!--
+            <br />
+                <input id="box1" value=""/>
+                <input id="box2" value=""/>
+                <p id="answer"></p>
+                <button id="solve" onclick="product()">SOLVE</button>
+            -->
+            </div>
+            
+        </body>
+    </html>
